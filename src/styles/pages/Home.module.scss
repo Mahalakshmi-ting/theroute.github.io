@@ -1,0 +1,21 @@
+@import "../helpers/helpers.scss";
+
+.body_wrapper {
+	background: #d38c23;
+	font-family: "Be Vietnam Pro", sans-serif;
+	font-weight: normal;
+	font-size: 1vw;
+	overflow: hidden;
+}
+
+.index_page {
+	@extend %f_r_aj_center;
+}
+
+.main_header {
+	li {
+		a {
+			color: #fff;
+		}
+	}
+}

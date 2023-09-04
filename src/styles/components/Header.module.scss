@@ -1,0 +1,16 @@
+@import "../helpers/helpers.scss";
+
+.main_header {
+	@extend %full_overlay;
+	@extend %f_r_aj_center;
+	height: 100px;
+	z-index: 20;
+	margin-top: 3em;
+	.logo_image {
+		max-width: 5em;
+	}
+	a {
+		font-size: 1.9em;
+		text-transform: uppercase;
+	}
+}

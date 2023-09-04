@@ -1,0 +1,91 @@
+@import "../helpers/helpers.scss";
+@import "variables.scss";
+@import "fontface.scss";
+@import "text_bg_color.scss";
+@import "typography.scss";
+@import "bootstrap3.scss";
+
+body,
+html,
+:root {
+	overflow-x: hidden;
+	background-color: #fff6f1;
+}
+
+body {
+	margin: 0;
+	@extend .text_reg;
+	font-family: var(--font_secondary);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color_brown);
+}
+
+.container-fluid {
+	width: 100%;
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.container {
+	@extend .container-fluid;
+	margin: 0 auto;
+	width: var(--container_width);
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.text_center {
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+}
+
+picture {
+	display: block !important;
+}
+
+.section_spacing {
+	padding: 10vmin 0;
+}
+
+//classes for fonts
+.font_primary {
+	font-family: var(--font_primary);
+	font-weight: normal;
+}
+.font_secondary {
+	font-family: var(--font_secondary);
+}
+
+p {
+	font-family: var(--font_primary);
+	font-size: 1.4em;
+}
+
+.theme-btn {
+	font-family: var(--font_secondary);
+	text-transform: uppercase;
+	background: url("/theme-btn-bg.png") no-repeat center center transparent;
+	background-size: contain;
+	font-size: 1.4em;
+	padding: 1rem 3rem;
+	color: #fff;
+	margin-top: 0.5rem;
+	display: inline-block;
+}
